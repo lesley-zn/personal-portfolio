@@ -1,0 +1,499 @@
+.biography-page {
+  color: #18181b;
+  background: #fff;
+}
+
+.bio-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: min(1280px, calc(100% - 96px));
+  margin: 0 auto;
+  padding-top: 64px;
+}
+
+.bio-brand {
+  position: relative;
+  top: auto;
+  left: auto;
+  flex: 0 0 88px;
+}
+
+.bio-brand .brand-cursor {
+  transform-origin: 50% 50%;
+}
+
+@media (hover: hover) {
+  .bio-brand:hover .brand-cursor,
+  .bio-brand:focus-visible .brand-cursor {
+    animation: bio-brand-cursor-curve 860ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+}
+
+@keyframes bio-brand-cursor-curve {
+  0% {
+    transform: translate(0, 0) rotate(-49deg);
+  }
+  8% {
+    transform: translate(-13px, 9px) rotate(-72deg);
+  }
+  20% {
+    transform: translate(-19px, 2px) rotate(-118deg);
+  }
+  34% {
+    transform: translate(-12px, -12px) rotate(-168deg);
+  }
+  50% {
+    transform: translate(13px, -17px) rotate(-215deg);
+  }
+  66% {
+    transform: translate(31px, -5px) rotate(-270deg);
+  }
+  82% {
+    transform: translate(22px, 19px) rotate(-320deg);
+  }
+  94% {
+    transform: translate(3px, 25px) rotate(-365deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(-409deg);
+  }
+}
+
+.bio-contact {
+  position: relative;
+  top: 4px;
+  right: auto;
+}
+
+.bio-main {
+  width: min(1240px, calc(100% - 96px));
+  margin: 0 auto;
+}
+
+.bio-section {
+  position: relative;
+  padding: 100px 0;
+}
+
+.bio-story {
+  position: relative;
+  z-index: 1;
+  width: 520px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.bio-story p {
+  margin: 0 0 30px;
+  font-size: 21px;
+  line-height: 1.85;
+}
+
+.bio-story strong {
+  font-weight: 650;
+}
+
+.bio-story > :last-child {
+  margin-bottom: 0;
+}
+
+.bio-avatar {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  margin-bottom: 24px;
+}
+
+.bio-story .bio-eyebrow,
+.bio-story .bio-date {
+  margin-bottom: 20px;
+  color: #737378;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.bio-opening h1 {
+  margin: 0 0 28px;
+  font-size: 40px;
+  font-weight: 650;
+  line-height: 1.25;
+}
+
+.bio-story .bio-lead {
+  margin-bottom: 36px;
+  font-size: 28px;
+  line-height: 1.65;
+}
+
+.bio-lead strong {
+  background: linear-gradient(transparent 66%, #dce9ff 66%, #dce9ff 94%, transparent 94%);
+}
+
+.bio-career h2 {
+  margin: 0 0 16px;
+  font-size: 26px;
+  line-height: 1.5;
+  font-weight: 650;
+}
+
+.bio-career h2 span {
+  display: inline-block;
+}
+
+.bio-story .bio-role {
+  margin-bottom: 42px;
+  color: #77777c;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.bio-art {
+  position: absolute;
+  display: block;
+  width: 210px;
+  margin: 0;
+  transform: rotate(var(--art-angle, -6deg));
+  transition: transform 280ms ease;
+}
+
+.bio-art-left {
+  top: 175px;
+  left: 0;
+}
+
+.bio-art-right {
+  --art-angle: 7deg;
+  top: 330px;
+  right: 0;
+}
+
+.bio-art img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.bio-art figcaption,
+.bio-art-caption {
+  display: block;
+  margin-top: 16px;
+  color: #77777c;
+  font-size: 13px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.bio-portrait {
+  top: 300px;
+}
+
+.bio-portrait img {
+  border: 7px solid #fff;
+  border-radius: 6px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.13);
+}
+
+.bio-workspace {
+  top: 180px;
+}
+
+.bio-workspace img {
+  filter: drop-shadow(0 10px 12px rgba(0, 0, 0, 0.06));
+}
+
+.bio-company-art {
+  width: 186px;
+  padding: 22px 8px;
+}
+
+.bio-company-art img {
+  width: 146px;
+  height: 44px;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.bio-project-art img {
+  aspect-ratio: 1;
+  object-fit: cover;
+  border: 6px solid #fff;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.bio-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 100%;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #b9b9bd;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.bio-text-link img {
+  flex: 0 0 18px;
+  transform: rotate(180deg);
+}
+
+.bio-text-link:hover {
+  border-color: #18181b;
+}
+
+.bio-art:focus-visible,
+.bio-text-link:focus-visible,
+.bio-email-button:focus-visible {
+  outline: 2px solid var(--selection);
+  outline-offset: 7px;
+}
+
+.bio-closing {
+  padding: 110px 0 170px;
+  text-align: center;
+}
+
+.bio-closing-avatar {
+  position: relative;
+  display: inline-flex;
+  margin: 0 auto 24px;
+  border-radius: 50%;
+  outline: none;
+}
+
+.bio-closing-avatar > img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  transition: transform 320ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.bio-closing-avatar:hover > img,
+.bio-closing-avatar:focus-visible > img {
+  transform: rotate(-10deg);
+}
+
+.bio-closing-bubble {
+  position: absolute;
+  left: calc(100% + 16px);
+  top: 50%;
+  width: max-content;
+  max-width: 210px;
+  padding: 10px 14px;
+  border: 1px solid #dedee2;
+  border-radius: 14px;
+  background: #fff;
+  color: #18181b;
+  font-size: 13px;
+  line-height: 1.5;
+  white-space: nowrap;
+  box-shadow: 0 8px 20px rgba(24, 24, 27, 0.08);
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(0, -50%) scale(0.94);
+  transform-origin: left center;
+  transition: opacity 180ms ease, transform 240ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.bio-closing-bubble::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  border-left: 1px solid #dedee2;
+  border-bottom: 1px solid #dedee2;
+  background: #fff;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.bio-closing-avatar:hover .bio-closing-bubble,
+.bio-closing-avatar:focus-visible .bio-closing-bubble {
+  opacity: 1;
+  transform: translate(0, -50%) scale(1);
+}
+
+.bio-closing h2 {
+  margin: 0 0 36px;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+.bio-email-button {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  padding: 12px 24px;
+  border-radius: 999px;
+  background: #18181b;
+  color: #fff;
+  font-size: 16px;
+}
+
+.biography-page .site-dock {
+  bottom: max(32px, env(safe-area-inset-bottom));
+}
+
+@media (hover: hover) {
+  .bio-art:hover {
+    transform: rotate(0);
+  }
+}
+
+@media (min-width: 1101px) and (max-height: 800px) {
+  .bio-opening {
+    padding-top: 40px;
+  }
+}
+
+/* Move the collage into the reading flow before it can overlap the text. */
+@media (max-width: 1100px) {
+  .bio-main {
+    width: min(620px, calc(100% - 64px));
+  }
+
+  .bio-section {
+    padding: 70px 0;
+  }
+
+  .bio-collage {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    width: 520px;
+    max-width: 100%;
+    margin: 60px auto 0;
+    padding: 0 16px;
+  }
+
+  .bio-art {
+    position: relative;
+    top: auto;
+    right: auto;
+    left: auto;
+    flex: 0 1 210px;
+    min-width: 0;
+  }
+
+  .bio-company-art img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .bio-header {
+    width: calc(100% - 48px);
+    padding-top: 32px;
+  }
+
+  .bio-contact {
+    width: auto;
+    min-height: 44px;
+    padding: 10px 18px;
+    font-size: 16px;
+  }
+
+  .bio-main {
+    width: calc(100% - 48px);
+  }
+
+  .bio-section {
+    padding: 60px 0;
+  }
+
+  .bio-avatar {
+    width: 60px;
+    height: 60px;
+  }
+
+  .bio-opening h1 {
+    font-size: 34px;
+  }
+
+  .bio-story .bio-lead {
+    font-size: 24px;
+  }
+
+  .bio-story p {
+    font-size: 18px;
+    line-height: 1.9;
+  }
+
+  .bio-career h2 {
+    font-size: 23px;
+  }
+
+  .bio-story .bio-role {
+    font-size: 14px;
+    margin-bottom: 32px;
+  }
+
+  .bio-story .bio-date,
+  .bio-story .bio-eyebrow {
+    font-size: 13px;
+  }
+
+  .bio-collage {
+    gap: 20px;
+    padding: 0 6px;
+    margin-top: 42px;
+  }
+
+  .bio-art {
+    flex-basis: 160px;
+  }
+
+  .bio-art figcaption,
+  .bio-art-caption {
+    font-size: 11px;
+  }
+
+  .bio-closing {
+    padding: 64px 0 112px;
+  }
+
+  .bio-closing h2 {
+    font-size: 36px;
+  }
+
+  .bio-closing-bubble {
+    left: 50%;
+    top: calc(100% + 10px);
+    max-width: calc(100vw - 48px);
+    white-space: normal;
+    text-align: center;
+    transform: translate(-50%, 0) scale(0.94);
+    transform-origin: center top;
+  }
+
+  .bio-closing-bubble::before {
+    left: 50%;
+    top: -6px;
+    border-left: 1px solid #dedee2;
+    border-bottom: 0;
+    border-top: 1px solid #dedee2;
+    transform: translateX(-50%) rotate(45deg);
+  }
+
+  .bio-closing-avatar:hover .bio-closing-bubble,
+  .bio-closing-avatar:focus-visible .bio-closing-bubble {
+    transform: translate(-50%, 0) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bio-art {
+    transition: none;
+  }
+
+  .bio-brand .brand-cursor,
+  .bio-closing-avatar > img,
+  .bio-closing-bubble {
+    animation: none;
+    transition: none;
+  }
+}

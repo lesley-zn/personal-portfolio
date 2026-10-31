@@ -1,0 +1,89 @@
+{
+  "profile": {
+    "name": "朱宁",
+    "avatar": "",
+    "photo": "",
+    "wechatQr": "",
+    "email": "",
+    "phone": "",
+    "social": []
+  },
+  "projects": [
+    {
+      "id": "train",
+      "title": "火车智能装车及数字孪生系统",
+      "short": "火车智能装车",
+      "tag": "UI / UX / 3D",
+      "sections": [
+        "项目概览",
+        "业务流程与信息结构",
+        "核心界面与交互",
+        "可视化与数字孪生"
+      ],
+      "tone": "#e8edf5",
+      "year": "",
+      "description": "",
+      "role": "",
+      "cover": "",
+      "video": "",
+      "images": []
+    },
+    {
+      "id": "carrier",
+      "title": "承运商 APP",
+      "short": "承运商 APP",
+      "tag": "UI / UX",
+      "sections": [
+        "项目概览",
+        "核心业务流程",
+        "关键界面与交互状态",
+        "组件与设计规范"
+      ],
+      "tone": "#eeedf5",
+      "year": "",
+      "description": "",
+      "role": "",
+      "cover": "",
+      "video": "",
+      "images": []
+    },
+    {
+      "id": "robot",
+      "title": "机器人智能管控平台",
+      "short": "机器人智能管控",
+      "tag": "UI / UX",
+      "sections": [
+        "项目概览与设计范围",
+        "业务对象与任务流程",
+        "规划与执行监控",
+        "关键界面与状态"
+      ],
+      "tone": "#e9efed",
+      "year": "",
+      "description": "",
+      "role": "",
+      "cover": "",
+      "video": "",
+      "images": []
+    },
+    {
+      "id": "energy",
+      "title": "重卡充换电管理平台",
+      "short": "重卡充换电管理",
+      "tag": "UI / UX",
+      "sections": [
+        "项目概览",
+        "站网运营与站控",
+        "电池监测与车辆调度",
+        "界面与可视化设计"
+      ],
+      "tone": "#f1ede7",
+      "year": "",
+      "description": "",
+      "role": "",
+      "cover": "",
+      "video": "",
+      "images": []
+    }
+  ]
+}
