@@ -53,18 +53,21 @@
       "short": "机器人智能管控",
       "tag": "UI / UX",
       "sections": [
-        "项目概览与设计范围",
-        "业务对象与任务流程",
-        "规划与执行监控",
-        "关键界面与状态"
+        "项目背景与职责",
+        "业务关系与设计思路",
+        "核心界面与交互演示",
+        "动效规则与设计规范"
       ],
       "tone": "#e9efed",
       "year": "",
-      "description": "",
-      "role": "",
-      "cover": "",
+      "description": "围绕机器人、场景与巡检任务，完成运行总览和工作面监控界面优化及基础动态演示。",
+      "role": "需求梳理 / 交互设计 / UI设计；原项目为部分需求与设计阶段",
+      "cover": "./assets/robot/cover.png",
       "video": "",
-      "images": []
+      "images": [
+        "./assets/robot/overview.png",
+        "./assets/robot/monitor.png"
+      ]
     },
     {
       "id": "energy",
