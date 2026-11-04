@@ -1,0 +1,13 @@
+# dist contains the authored site and must remain tracked.
+node_modules/
+.venv/
+__pycache__/
+.env
+.env.*
+!.env.example
+*.log
+*.pem
+*.key
+.DS_Store
+Thumbs.db
+coverage/
