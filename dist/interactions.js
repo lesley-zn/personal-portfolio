@@ -1,7 +1,7 @@
 (() => {
  const reduced=matchMedia('(prefers-reduced-motion: reduce)');
  const dialog=document.querySelector('.contact-dialog');let previousFocus;
- function openContact(message='联系方式待补充'){
+ function openContact(message='欢迎通过邮箱或电话与我联系。'){
   if(!dialog||dialog.open)return;previousFocus=document.activeElement;
   dialog.querySelector('.contact-note').textContent=message;
   dialog.showModal();document.documentElement.classList.add('is-contact-open');
@@ -20,7 +20,7 @@
  const star=document.querySelector('.star-toggle');
  if(star){const outline=star.getAttribute('src');const toggle=()=>{const state=star.getAttribute('aria-pressed')!=='true';star.setAttribute('aria-pressed',String(state));star.src=state?star.dataset.filledSrc:outline;};star.addEventListener('click',toggle);star.addEventListener('keydown',e=>{if(['Enter',' '].includes(e.key)){e.preventDefault();toggle();}});}
  const card=document.querySelector('.about-profile-card'),photo=card?.querySelector('.about-card-photo-image'),follow=card?.querySelector('.about-follow-button');
- if(follow&&photo){const initial=photo.src;let busy=false,following=false;follow.addEventListener('click',()=>{if(busy)return;busy=true;follow.disabled=true;card.classList.add('is-flipping');setTimeout(()=>{following=!following;photo.src=following?photo.dataset.followedSrc:initial;photo.alt=following?'个人插画位置':'个人照片位置';follow.textContent=following?'已关注':'关注';follow.setAttribute('aria-pressed',String(following));card.classList.toggle('is-following',following);},reduced.matches?0:390);setTimeout(()=>{card.classList.remove('is-flipping');follow.disabled=false;busy=false;},reduced.matches?20:780);});}
+ if(follow&&photo){const initial=photo.src;let busy=false,following=false;follow.addEventListener('click',()=>{if(busy)return;busy=true;follow.disabled=true;card.classList.add('is-flipping');setTimeout(()=>{following=!following;photo.src=following?photo.dataset.followedSrc:initial;photo.alt='朱宁的个人照片';follow.textContent=following?'已关注':'关注';follow.setAttribute('aria-pressed',String(following));card.classList.toggle('is-following',following);},reduced.matches?0:390);setTimeout(()=>{card.classList.remove('is-flipping');follow.disabled=false;busy=false;},reduced.matches?20:780);});}
  const dock=document.querySelector('.site-dock');let lastY=scrollY;
  addEventListener('wheel',e=>{if(!dialog?.open&&dock){if(e.deltaY>0)dock.classList.add('is-hidden');if(e.deltaY<0)dock.classList.remove('is-hidden');}},{passive:true});
  addEventListener('scroll',()=>{if(dock&&!dialog?.open){const delta=scrollY-lastY;if(delta>3)dock.classList.add('is-hidden');if(delta<-3||scrollY<2)dock.classList.remove('is-hidden');lastY=scrollY;}},{passive:true});

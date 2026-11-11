@@ -15,18 +15,26 @@
       "short": "火车智能装车",
       "tag": "UI / UX / 3D",
       "sections": [
-        "项目概览",
-        "业务流程与信息结构",
-        "核心界面与交互",
-        "可视化与数字孪生"
+        "项目背景与用户场景",
+        "业务流程与信息架构",
+        "视觉规范与界面细节",
+        "大屏动态图表演示"
       ],
       "tone": "#e8edf5",
       "year": "",
-      "description": "",
+      "description": "围绕装车计划、现场作业与异常追溯，展示原稿、业务结构、视觉规范及动态图表演示。",
       "role": "",
-      "cover": "",
+      "cover": "./assets/train/cover-warehouse.png",
       "video": "",
-      "images": []
+      "images": [
+        "./assets/train/portal.webp",
+        "./assets/train/cockpit.webp",
+        "./assets/train/dashboard-original.webp",
+        "./assets/train/silos.webp",
+        "./assets/train/plan.webp",
+        "./assets/train/alarms.webp",
+        "./assets/train/equipment.webp"
+      ]
     },
     {
       "id": "carrier",
@@ -43,7 +51,7 @@
       "year": "",
       "description": "",
       "role": "",
-      "cover": "",
+      "cover": "./assets/carrier/blue/cover.png",
       "video": "",
       "images": []
     },
@@ -62,7 +70,7 @@
       "year": "",
       "description": "红框内7张原稿展示，五组机器人顺时针环绕与悬停放大、五秒轨道巡检演示，以及大屏和后台双体系设计规范。",
       "role": "需求梳理 / 交互设计 / UI设计；原项目为部分需求与设计阶段",
-      "cover": "./assets/robot-original/cover.png",
+      "cover": "./assets/robot-original/cover-drone.png",
       "video": "",
       "images": [
         "./assets/robot-original/overview.png",
@@ -76,22 +84,26 @@
     },
     {
       "id": "energy",
-      "title": "重卡充换电管理平台",
-      "short": "重卡充换电管理",
+      "title": "重卡充换电网络运营平台",
+      "short": "重卡充换电运营",
       "tag": "UI / UX",
       "sections": [
-        "项目概览",
-        "站网运营与站控",
-        "电池监测与车辆调度",
-        "界面与可视化设计"
+        "项目背景与设计分析",
+        "内容结构与设计过程",
+        "地图、字体与视觉规范",
+        "首页动效与完整界面"
       ],
       "tone": "#f1ede7",
       "year": "",
-      "description": "",
+      "description": "重卡充换电网络运营平台：项目背景、设计过程、视觉规范与完整界面展示。",
       "role": "",
-      "cover": "",
+      "cover": "./assets/energy/cover-display.png",
       "video": "",
-      "images": []
+      "images": [
+        "./assets/energy/cover-display.png",
+        "./assets/energy/overview-terrain.svg",
+        "./assets/energy/batterybox-wire.svg"
+      ]
     }
   ]
 }

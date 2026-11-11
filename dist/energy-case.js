@@ -1,0 +1,1 @@
+(()=>{const b=document.getElementById('case-zoom');b?.addEventListener('click',()=>{const on=document.body.classList.toggle('zoomed');b.setAttribute('aria-pressed',String(on));b.textContent=on?'−':'＋';b.setAttribute('aria-label',on?'恢复宽度':'放大查看');});})();
